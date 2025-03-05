@@ -13,8 +13,6 @@ This repository is organized as follows:
 📂 SOTIF_Scenario_Dataset/ # KITTI-formatted LiDAR dataset │-- 📂 ImageSets/ # Training/testing splits │-- 📂 kitti_gt_database/ # Ground truth database │-- 📂 testing/ # Testing dataset │-- 📜 kitti_dbinfos_train.pkl # Training dataset information │-- 📜 kitti_infos_test.pkl # Test dataset info │-- 📜 kitti_infos_train.pkl # Train dataset info │-- 📜 kitti_infos_trainval.pkl # Train+Validation dataset info │-- 📜 kitti_infos_val.pkl # Validation dataset info │ 
 
 📂 Carla dataset generation/ # Dataset generation scripts │-- 📜 carla_data_descriptor.py # Describes dataset properties │-- 📜 carla_weather_presets.txt # Weather settings for simulation │-- 📜 CARTI_Dataset_V1.0.py # Dataset generation script │-- 📜 CMM_CARLA_Config.py # CARLA configuration script │-- 📜 lane_change.py # Lane change maneuver script │-- 📜 LaneChange.xml # XML configuration for scenario │ 📜 README.md # Project documentation 📜 requirements.txt # Dependencies 📜 LICENSE # MIT License 📜 dataset_snapshot.png # Preview of dataset (image) 📜 scenario_snapshot.png # Snapshot of the simulation environment
-📸 **Folder Structure Preview**:  
-![Folder Structure](folder_structure.png)
 
 
 ## 📍 **Scenario Description**
@@ -27,7 +25,7 @@ This project simulates a **SOTIF-related use case** in a **multi-lane highway sc
 - **Dataset records LiDAR point cloud frames** in **KITTI format**, ensuring compatibility with benchmark models.
 
 📸 **Scenario Visualization**:  
-![Scenario Snapshot](scenario_snapshot.png)
+![Use Case_Description](https://github.com/user-attachments/assets/ac1801aa-6c6d-4784-b428-16021ebedeb4)
 
 ---
 
@@ -35,7 +33,9 @@ This project simulates a **SOTIF-related use case** in a **multi-lane highway sc
 Here’s a **2D visualization of a sample LiDAR point cloud frame** from the dataset:
 
 📸 **Dataset Sample**:  
-![Dataset Snapshot](dataset_snapshot.png)
+![dataset_overview](https://github.com/user-attachments/assets/197b4a9c-59c8-4168-a6d3-75db4065d15f)
+
+
 
 ---
 
