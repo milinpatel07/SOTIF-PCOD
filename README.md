@@ -10,6 +10,9 @@ The evaluation is conducted using **pre-trained models trained on KITTI**, teste
 ## 📂 **Repository Structure**
 This repository is organized as follows:
 
+📂 SOTIF_Scenario_Dataset/ # KITTI-formatted LiDAR dataset │-- 📂 ImageSets/ # Training/testing splits │-- 📂 kitti_gt_database/ # Ground truth database │-- 📂 testing/ # Testing dataset │-- 📜 kitti_dbinfos_train.pkl # Training dataset information │-- 📜 kitti_infos_test.pkl # Test dataset info │-- 📜 kitti_infos_train.pkl # Train dataset info │-- 📜 kitti_infos_trainval.pkl # Train+Validation dataset info │-- 📜 kitti_infos_val.pkl # Validation dataset info │ 
+
+📂 Carla dataset generation/ # Dataset generation scripts │-- 📜 carla_data_descriptor.py # Describes dataset properties │-- 📜 carla_weather_presets.txt # Weather settings for simulation │-- 📜 CARTI_Dataset_V1.0.py # Dataset generation script │-- 📜 CMM_CARLA_Config.py # CARLA configuration script │-- 📜 lane_change.py # Lane change maneuver script │-- 📜 LaneChange.xml # XML configuration for scenario │ 📜 README.md # Project documentation 📜 requirements.txt # Dependencies 📜 LICENSE # MIT License 📜 dataset_snapshot.png # Preview of dataset (image) 📜 scenario_snapshot.png # Snapshot of the simulation environment
 📸 **Folder Structure Preview**:  
 ![Folder Structure](folder_structure.png)
 
@@ -77,5 +80,11 @@ This dataset and methodology were used in the following research papers:
 🚀 *arXiv preprint, 2025.*  
 🔗 [arXiv Link](https://arxiv.org/abs/2503.02087)  
 
+
+🔗 License
+This project is licensed under the MIT License. See LICENSE for details.
+
+📬 Contact
+For any inquiries or collaborations, please reach out via milinp101996@gmail.com or open an issue on GitHub.
 
 
