@@ -1,0 +1,512 @@
+<?xml version="1.0"?>
+<scenarios>
+  <scenario name="LaneChange_1" type="LaneChangeR" town="Town04">  #clearnoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.lincoln.mkz_2017" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.lincoln.mkz_2017"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.lincoln.mkz_2017" />
+        <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+
+		/>
+    </scenario>
+
+    <scenario name="LaneChange_2" type="LaneChangeR" town="Town04">    #cloudynoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+
+     <scenario name="LaneChange_3" type="LaneChangeR" town="Town04">    #WetNoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_4" type="LaneChangeR" town="Town04">    #WetCloudyNoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_5" type="LaneChangeR" town="Town04">    #MidRainyNoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="96.05859375"
+        precipitation_deposits="96.05859375"
+        wind_intensity="96.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_6" type="LaneChangeR" town="Town04">    #HardRainNoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="256.05859375"
+        precipitation="256.05859375"
+        precipitation_deposits="144.05859375"
+        wind_intensity="256.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="7.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_7" type="LaneChangeR" town="Town04">    #SoftRainNoon
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="32.05859375"
+        precipitation="48.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="48.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_8" type="LaneChangeR" town="Town04">    #ClearSunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+         <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_9" type="LaneChangeR" town="Town04">    #CloudySunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_10" type="LaneChangeR" town="Town04">    #wetsunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+         <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_11" type="LaneChangeR" town="Town04">    #WetCloudySunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+           <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+     <scenario name="LaneChange_12" type="LaneChangeR" town="Town04">    #	MidRainSunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="96.05859375"
+        precipitation_deposits="96.05859375"
+        wind_intensity="96.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="3.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_13" type="LaneChangeR" town="Town04">    #HardRainSunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+          <weather cloudiness="256.05859375"
+        precipitation="256.05859375"
+        precipitation_deposits="144.05859375"
+        wind_intensity="256.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="7.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_14" type="LaneChangeR" town="Town04">    #HardRainSunset
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="32.05859375"
+        precipitation="48.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="48.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="21.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_15" type="LaneChangeR" town="Town04">    #ClearNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="117.460693359375"
+        fog_falloff="1.05859375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+
+     <scenario name="LaneChange_16" type="LaneChangeR" town="Town04">    #CloudyNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+         <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_17" type="LaneChangeR" town="Town04">    #wetNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+          <weather cloudiness="5.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="117.460693359375"
+        fog_falloff="1.05859375"
+        wetness="96.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_18" type="LaneChangeR" town="Town04">    #WetCloudyNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="16.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="96.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+     <scenario name="LaneChange_19" type="LaneChangeR" town="Town04">    #	MidRainNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="96.05859375"
+        precipitation="48.05859375"
+        precipitation_deposits="80.05859375"
+        wind_intensity="48.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="96.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_20" type="LaneChangeR" town="Town04">    #HardRainNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="128.05859375"
+        precipitation="96.05859375"
+        precipitation_deposits="96.05859375"
+        wind_intensity="96.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="96.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="128.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+     <scenario name="LaneChange_21" type="LaneChangeR" town="Town04">    #HardRainNight
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="256.05859375"
+        precipitation="256.05859375"
+        precipitation_deposits="144.05859375"
+        wind_intensity="256.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="-144.05859375"
+        fog_density="256.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="256.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="0.05859375"
+        />
+    </scenario>
+
+
+    <scenario name="LaneChange_22" type="LaneChangeR" town="Town04">    #DustStorm
+        <ego_vehicle x="35" y="-335" z="0" yaw="120" model="vehicle.mercedes.coupe_2020" />
+	<!-- spawn actors-->
+	<other_actor x="2.5" y="-285" z="0" yaw="100" model="vehicle.dodge.charger_2020"  />
+	<other_actor x="-9.3" y="-235" z="0" yaw="90" model="vehicle.dodge.charger_2020"  />
+        <weather cloudiness="256.05859375"
+        precipitation="0.05859375"
+        precipitation_deposits="0.05859375"
+        wind_intensity="256.05859375"
+        sun_azimuth_angle="-1.05859375"
+        sun_altitude_angle="69.05859375"
+        fog_density="2.05859375"
+        fog_distance="0.460693359375"
+        fog_falloff="0.12109375"
+        wetness="0.05859375"
+        scattering_intensity="1.05859375"
+        mie_scattering_scale="0.015380859375"
+        rayleigh_scattering_scale="0.0126800537109375"
+        dust_storm="256.05859375"
+        />
+    </scenario>
+
+
+</scenarios>
+
+
+
