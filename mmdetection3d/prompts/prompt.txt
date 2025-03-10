@@ -1,0 +1,36 @@
+python tools/test.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth --cfg-options test_evaluator.pklfile_prefix=results --show --show-dir detection_results --task lidar_det
+
+
+
+# Set up the environment and specify CUDA_VISIBLE_DEVICES if needed
+# For example, if you want to use GPU 0:
+# export CUDA_VISIBLE_DEVICES=0
+
+# Replace with your actual paths and directories
+CONFIG_FILE="configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py"
+CHECKPOINT_FILE="checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth"
+RESULT_FILE="results"  # Prefix for results.pkl file
+OUTPUT_DIR="output"    # Directory to save _gt.obj, points_obj, and pred.obj files
+OUTPUT_PREFIX="results"  # Prefix for output files (e.g., results_0000_gt.obj, results_0000_points.obj, results_0000_pred.obj)
+SHOW_DIR="visualization"  # Directory to save visualization results
+
+# Run single-GPU testing with debugging, visualization, and saving results
+
+
+
+python tools/test.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth \
+    --cfg-options "test_evaluator.pklfile_prefix=${RESULT_FILE}" \
+    --eval-options "out_dir=${OUTPUT_DIR} out_prefix=${OUTPUT_PREFIX}" \
+    --show \
+    --show-dir ${SHOW_DIR}
+
+
+python tools/test.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth \
+    --cfg-options "test_evaluator.pklfile_prefix=results_test" \
+    --eval-options "out_dir=output out_prefix=results_out" \
+    --show \
+    --show-dir visualization
+
+
+
+python tools/test.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py checkpoints/hv_second_secfpn_6x8_80e_kitti-3d-car_20200620_230238-393f000c.pth --cfg-options "test_evaluator.pklfile_prefix=results" --show --show-dir visualization

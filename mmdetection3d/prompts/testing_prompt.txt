@@ -1,0 +1,19 @@
+
+python tools/test.py configs/second/second_hv_secfpn_8xb6-amp-80e_kitti-3d-car.py checkpoints/second_hv_secfpn_8xb6-80e_kitti-3d-car-75d9305e.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/SECOND_results' 'submission_prefix=./data/kitti/testing_results/SECOND_results' --work-dir ./data/kitti/testing_results/test_second_results
+
+
+python tools/test.py configs/pv_rcnn/pv_rcnn_8xb2-80e_kitti-3d-3class.py checkpoints/pv_rcnn_8xb2-80e_kitti-3d-3class_20221117_234428-b384d22f.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/pv_rcnn_results' 'submission_prefix=./data/kitti/testing_results/pv_rcnn_results' --work-dir ./data/kitti/testing_results/pv_rcnn_results
+
+
+python tools/test.py configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-3class.py checkpoints/hv_pointpillars_secfpn_6x8_160e_kitti-3d-3class_20220301_150306-37dc2420.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/class-3/PointPillars_results' 'submission_prefix=./data/kitti/testing_results/class-3/PointPillars_results' --work-dir ./data/kitti/testing_results/class-3/PointPillars_results
+
+
+python tools/test.py configs/parta2/parta2_hv_secfpn_8xb2-cyclic-80e_kitti-3d-car.py checkpoints/hv_PartA2_secfpn_2x8_cyclic_80e_kitti-3d-car_20210831_022017-cb7ff621.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/class-3/PartA2_results' 'submission_prefix=./data/kitti/testing_results/class-3/PartA2_results' --work-dir ./data/kitti/testing_results/class-3/PartA2_results
+
+
+python tools/test.py configs/dynamic_voxelization/second_dv_secfpn_8xb2-cosine-80e_kitti-3d-3class.py checkpoints/dv_second_secfpn_2x8_cosine_80e_kitti-3d-3class_20210831_054106-e742d163.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/class-3/dynamic_voxelization_results' 'submission_prefix=./data/kitti/testing_results/class-3/dynamic_voxelization_results' --work-dir ./data/kitti/testing_results/class-3/dynamic_voxelization_results
+
+
+python tools/test.py configs/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py checkpoints/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class-8963258a.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/testing_results/class-3/mvxnet_results' 'submission_prefix=./data/kitti/testing_results/class-3/mvxnet_results' --work-dir ./data/kitti/testing_results/class-3/mvxnet_results
+
+

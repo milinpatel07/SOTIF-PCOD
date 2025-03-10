@@ -1,0 +1,15 @@
+python tools/train.py ${CONFIG_FILE} [optional arguments]
+
+
+
+python tools/train.py configs/second/second_hv_secfpn_8xb6-amp-80e_kitti-3d-car.py --amp --auto-scale-lr --work-dir train_results/second_model
+
+python tools/train.py configs/pv_rcnn/pv_rcnn_8xb2-80e_kitti-3d-3class.py --amp --auto-scale-lr --work-dir train_results/pv_rcnn_model
+
+python tools/train.py configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-3class.py --amp --auto-scale-lr --work-dir train_results/pointpillars
+
+python tools/train.py configs/parta2/parta2_hv_secfpn_8xb2-cyclic-80e_kitti-3d-car.py --amp --auto-scale-lr --work-dir train_results/parta2
+
+python tools/train.py configs/dynamic_voxelization/second_dv_secfpn_8xb2-cosine-80e_kitti-3d-3class.py --amp --auto-scale-lr --work-dir train_results/dynamic_voxelization
+
+python tools/train.py configs/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py --amp --auto-scale-lr --work-dir train_results/mvxnet

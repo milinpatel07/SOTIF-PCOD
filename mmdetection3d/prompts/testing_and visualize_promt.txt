@@ -1,0 +1,19 @@
+
+python tools/test.py --task lidar_det configs/second/second_hv_secfpn_8xb6-amp-80e_kitti-3d-car.py checkpoints/second_hv_secfpn_8xb6-80e_kitti-3d-car-75d9305e.pth --show --show-dir ./data/kitti/testing_results/test_second_results
+
+
+python tools/test.py --task lidar_det configs/pv_rcnn/pv_rcnn_8xb2-80e_kitti-3d-3class.py checkpoints/pv_rcnn_8xb2-80e_kitti-3d-3class_20221117_234428-b384d22f.pth --show --show-dir ./data/kitti/testing_results/pv_rcnn_results
+
+
+python tools/test.py --task lidar_det configs/pointpillars/pointpillars_hv_secfpn_8xb6-160e_kitti-3d-3class.py checkpoints/hv_pointpillars_secfpn_6x8_160e_kitti-3d-3class_20220301_150306-37dc2420.pth --show --show-dir ./data/kitti/testing_results/PointPillars_results
+
+
+python tools/test.py --task lidar_det configs/parta2/parta2_hv_secfpn_8xb2-cyclic-80e_kitti-3d-car.py checkpoints/hv_PartA2_secfpn_2x8_cyclic_80e_kitti-3d-car_20210831_022017-cb7ff621.pth --show --show-dir ./data/kitti/testing_results/PartA2_results
+
+
+python tools/test.py --task lidar_det configs/dynamic_voxelization/second_dv_secfpn_8xb2-cosine-80e_kitti-3d-3class.py checkpoints/dv_second_secfpn_2x8_cosine_80e_kitti-3d-3class_20210831_054106-e742d163.pth --show --show-dir  ./data/kitti/testing_results/dynamic_voxelization_results
+
+
+python tools/test.py --task lidar_det configs/mvxnet/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class.py checkpoints/mvxnet_fpn_dv_second_secfpn_8xb2-80e_kitti-3d-3class-8963258a.pth --show --show-dir ./data/kitti/testing_results/mvxnet_results
+
+

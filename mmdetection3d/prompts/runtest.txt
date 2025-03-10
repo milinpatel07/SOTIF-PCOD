@@ -1,0 +1,41 @@
+python tools/create_data.py kitti --root-path ./data/kitti/02_Cloudy_Noon --out-dir ./data/kitti/02_Cloudy_Noon --extra-tag kitti
+
+
+python tools/create_data.py kitti --root-path ./data/kitti --out-dir ./data/kitti --extra-tag kitti 
+
+
+python tools/test.py --task lidar_det configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py checkpoints/second_hv_secfpn_8xb6-80e_kitti-3d-car-75d9305e.pth --show --show-dir ./data/kitti/second_results
+
+
+
+python tools/test.py --task lidar_det configs/second/second_hv_secfpn_8xb6-amp-80e_kitti-3d-car.py checkpoints/dv_second_secfpn_6x8_80e_kitti-3d-car_20200620_235228-ac2c1c0c.pth --cfg-options 'test_evaluator.pklfile_prefix=./data/kitti/second_kitti_results' 'submission_prefix=./data/kitti/second_kitti_results' --work-dir ./data/kitti/log_second_results
+
+
+
+
+ python tools/test.py --task lidar_det configs/second/second_hv_secfpn_8xb6-amp-80e_kitti-3d-car.py checkpoints/dv_second_secfpn_6x8_80e_kitti-3d-car_20200620_23522
+8-ac2c1c0c.pth  --work-dir ./data/kitti/custom_second
+
+
+ python tools/test.py configs/pv_rcnn/point-rcnn_8xb2_kitti-3d-3class.py checkpoints/pv_rcnn_8xb2-80e_kitti-3d-3class_20221117_234428-b384d22f.pth  --work-dir ./data/kitti/custom_pvrcnn
+
+
+
+%train%
+
+
+
+
+
+#ensemble, We train with the same yaml file four times with different seed numbersto create four ensemble members.
+
+python tools/train.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py --cfg-options batch_size=6 epochs=120 fix_random_seed=True set_random_seed=0 extra_tag=120_epochs_seed_0
+
+python tools/train.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py --cfg-options batch_size=6 epochs=120 fix_random_seed=True set_random_seed=1 extra_tag=120_epochs_seed_1
+
+python tools/train.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py --cfg-options batch_size=6 epochs=120 fix_random_seed=True set_random_seed=2 extra_tag=120_epochs_seed_2
+
+python tools/train.py configs/second/second_hv_secfpn_8xb6-80e_kitti-3d-car.py --cfg-options batch_size=6 epochs=120 fix_random_seed=True set_random_seed=3 extra_tag=120_epochs_seed_3
+
+
+
