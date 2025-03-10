@@ -1,0 +1,50 @@
+the differences is in config file:
+
+
+1. DENSE_HEAD:
+        NAME: AnchorHeadSingleVAR
+
+
+2. LOSS_CONFIG:
+            CLF_LOSS_TYPE: SoftmaxFocalLossV2
+            REG_LOSS_TYPE: VarRegLoss
+
+
+Programm it accordingly.
+
+###more tips##
+
+
+3. Train_utils.py
+
+openpcdet v2. one is more standarized and optimized, and can be adpated directly without any change
+
+
+4. Train.py:
+
+If modularity and flexibility are important and you prefer a structured approach, v1 may be more suitable.
+If you prefer a simpler, more compact script with additional features and better error handling, v2 might be preferred.
+
+v1-> lidar-mimo and v2-> openpcdet
+
+
+5.Pcdet
+
+
+models/densehead/..
+###AnchorHeadSingle:
+
+This variant defines a basic anchor head module that predicts class scores (cls_preds) and bounding box regression offsets (box_preds).
+It optionally predicts direction classification scores (dir_cls_preds) if specified in the model configuration.
+It initializes the weights of the convolutional layers (conv_cls and conv_box) using specific initialization strategies.
+It doesn't include any explicit handling for variance prediction or associated losses.
+
+
+####AnchorHeadSingleVAR:
+
+This variant extends AnchorHeadSingle by adding a convolutional layer (conv_var) to predict variance parameters for bounding box regression.
+It also introduces additional loss components for handling variance prediction (var_loss, var_linear_loss, var_angle_loss).
+The build_losses method sets up loss functions including those related to variance prediction.
+During the forward pass, it predicts variance (var_preds) along with class scores and bounding box regression offsets.
+It includes modifications in loss calculation to accommodate variance prediction, such as adjusting loss weights and computing variance-related losses.
+
