@@ -773,16 +773,12 @@ class IouRegLossSparse(nn.Module):
 class L1Loss(nn.Module):
     def __init__(self):
         super(L1Loss, self).__init__()
-       
-<<<<<<< HEAD:loss_utils_modified_v3.py
-    def forward(self, pred, target):
-        if target.numel() == 0:
-            return pred.sum() * 0
-        assert pred.size() == target.size()
-        loss = torch.abs(pred - target)
-        return loss
-=======
+
     def forward(self, input, target):
+        """Compute element-wise L1 loss."""
+        if target.numel() == 0:
+            return input.sum() * 0
+        assert input.size() == target.size()
         return torch.abs(input - target)
 
 class FocalLoss(nn.Module):
@@ -810,7 +806,6 @@ def smooth_l1_loss(input, target, beta=1.0, reduction="mean"):
     if reduction == "sum":
         return torch.sum(loss)
     return loss
->>>>>>> b191a8bbf40a906e2c2dce7598db17cbadbf76b4:loss_utils_modified_v2.py
 
 
 class GaussianFocalLoss(nn.Module):
