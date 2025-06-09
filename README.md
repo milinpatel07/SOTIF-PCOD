@@ -3,17 +3,39 @@
 ## 📍 Overview
 This repository contains the **LiDAR dataset and scripts** used for evaluating **State-of-the-Art (SOTA) 3D object detection models** in a **simulation-based generated dataset for a SOTIF-related use case**. The dataset follows the **KITTI format** and is generated using **CARLA**, simulating **21 diverse weather conditions** across different times of the day.
 
-The evaluation is conducted using **pre-trained models trained on KITTI**, tested with **MMDetection3D** and **OpenPCDet** toolkits to assess **performance variations under simulated conditions**.
+The evaluation is conducted using **pre-trained models on KITTI**, tested with **MMDetection3D** and **OpenPCDet** toolkits to assess **performance variations under simulated conditions**.
 
 ---
 
 ## 📂 **Repository Structure**
 This repository is organized as follows:
 
-📂 SOTIF_Scenario_Dataset/ # KITTI-formatted LiDAR dataset │-- 📂 ImageSets/ # Training/testing splits │-- 📂 kitti_gt_database/ # Ground truth database │-- 📂 testing/ # Testing dataset │-- 📜 kitti_dbinfos_train.pkl # Training dataset information │-- 📜 kitti_infos_test.pkl # Test dataset info │-- 📜 kitti_infos_train.pkl # Train dataset info │-- 📜 kitti_infos_trainval.pkl # Train+Validation dataset info │-- 📜 kitti_infos_val.pkl # Validation dataset info │ 
+### SOTIF_Scenario_Dataset
+- ImageSets/ - training/testing splits
+- kitti_gt_database/ - ground truth database
+- testing/ - testing dataset
+- kitti_dbinfos_train.pkl - training dataset information
+- kitti_infos_test.pkl - test dataset info
+- kitti_infos_train.pkl - train dataset info
+- kitti_infos_trainval.pkl - train+validation dataset info
+- kitti_infos_val.pkl - validation dataset info
 
-📂 Carla dataset generation/ # Dataset generation scripts │-- 📜 carla_data_descriptor.py # Describes dataset properties │-- 📜 carla_weather_presets.txt # Weather settings for simulation │-- 📜 CARTI_Dataset_V1.0.py # Dataset generation script │-- 📜 CMM_CARLA_Config.py # CARLA configuration script │-- 📜 lane_change.py # Lane change maneuver script │-- 📜 LaneChange.xml # XML configuration for scenario │ 📜 README.md # Project documentation 📜 requirements.txt # Dependencies 📜 LICENSE # MIT License 📜 dataset_snapshot.png # Preview of dataset (image) 📜 scenario_snapshot.png # Snapshot of the simulation environment
+### Carla dataset generation
+- carla_data_descriptor.py - describes dataset properties
+- carla_weather_presets.txt - weather settings for simulation
+- CARTI_Dataset_V1.0.py - dataset generation script
+- CMM_CARLA_Config.py - CARLA configuration script
+- lane_change.py - lane change maneuver script
+- LaneChange.xml - scenario configuration
+- README.md - project documentation
+- requirements.txt - dependencies
+- LICENSE - MIT license
+- dataset_snapshot.png - dataset preview
+- scenario_snapshot.png - simulation environment snapshot
 
+### Frameworks
+- OpenPCDet/
+- mmdetection3d/
 
 ## 📍 **Scenario Description**
 This project simulates a **SOTIF-related use case** in a **multi-lane highway scenario** where an **Ego-Vehicle (LiDAR-equipped)** navigates under varying **weather conditions**. The key elements of the scenario include:
